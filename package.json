@@ -1,0 +1,26 @@
+{
+  "name": "forge-db-session",
+  "version": "1.0.0",
+  "description": "A lambda function to store Forge auth tokens in Dynamo DB encrypted table",
+  "main": "lambda.js",
+  "scripts": {
+    "create": "claudia create --region us-east-1 --handler lambda.handler --version demo",
+    "destroy": "claudia destroy",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "claudia update --version demo"
+  },
+  "keywords": [
+    "Autodesk",
+    "Forge",
+    "oAuth2",
+    "AWS",
+    "Lambda",
+    "DynamoDB"
+  ],
+  "author": "Bastien Mazeran",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.251.1",
+    "forge-apis": "^0.4.1"
+  }
+}
